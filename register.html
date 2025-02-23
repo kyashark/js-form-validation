@@ -1,0 +1,51 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h2>Register</h2>
+
+    <div class="card">
+      <a class="box left" href="#">
+        <img src="image/google.png" class="logo-image" />
+        <span>Sign up with Google</span>
+      </a>
+      <a class="box right" href="#">
+        <img src="image/facebook.png" class="logo-image" />
+        <span>Sign up with Facebook</span>
+      </a>
+    </div>
+
+    <span class="middle-text">OR</span>
+
+    <div class="form-container">
+      <form id="signupForm" action="login.html">
+        <input type="text" id="username" placeholder="Username" onblur="validateUsername()" />
+        <span class="error-message" id="username-error"></span>
+
+        <input type="email" id="email" placeholder="Email" onblur="validateEmail()" />
+        <span class="error-message" id="email-error"></span>
+
+        <input type="password" id="password" placeholder="Password" onblur="validatePassword()" />
+        <span class="error-message" id="password-error"></span>
+
+        <input type="password" id="confirm-password" placeholder="Confirm Password"
+          onblur="validateConfirmPassword()" />
+        <span class="error-message" id="confirm-password-error"></span>
+
+        <button type="submit" id="submit">Create Account</button>
+        <p>Already have an account?&nbsp;<a href="login.html">Login</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
